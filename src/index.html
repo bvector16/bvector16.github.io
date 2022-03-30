@@ -6,6 +6,9 @@
     <meta name="author" content="Viktor">
     <meta name="robots" content="all">
     
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <meta property="og:title" content="Это моя первая страница">
     <title>Андрей Браун - Веб-разработчик</title>
 </head>
@@ -37,9 +40,12 @@
 	</div>
 	
     <div class="about"><div class="about__conteiner">
-	        <h2>ОБО МНЕ</h2>
+	        <h3>ОБО МНЕ</h3>
+	        <img src="img/underline.svg" alt="Ошибочка">
+	        <br>
 	        <img src="img/Little_photo.png" alt="Здесь должно быть фото Андрея">
         <span class="info"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo. </p>
+        <br><br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p></span>
 	        <input type="submit" value="Скачать резюме">
@@ -47,7 +53,10 @@
 	</div>
 	
 	<div class="what_i_can">
+        <div class="what_i_can_sq">
 	    <h3>ЧТО Я УМЕЮ</h3>
+	    <img src="img/underline.svg" alt="Ошибочка">
+	    <br>
 	    <div class="what">
 	        <img src="img/note.svg" alt="Изображение">
 	        <h5>Веб-дизайн</h5>
@@ -59,7 +68,7 @@
 	    </div>
 	    
 	    <div class="what">
-	        <img src="img/symbol.svg" alt="Изображение">
+	        <img src="img/symbol.svg" alt="Изображение" id="create">
 	        <h5>Разработка</h5>
 	        <span class="info">
 	            Lorem ipsum dolor sit amet placerat
@@ -69,7 +78,7 @@
 	    </div>
 	    
 	    <div class="what">
-	        <img src="img/rocket.svg" alt="Изображение">
+	        <img src="img/rocket.svg" alt="Изображение" id="CEO">
 	        <h5>CEO-оптимизация</h5>
 	        <span class="info">
 	            Lorem ipsum dolor sit amet placerat
@@ -79,7 +88,7 @@
 	    </div>
 	    
 	    <div class="what">
-	        <img src="img/gram.svg" alt="Изображение">
+	        <img src="img/gram.svg" alt="Изображение" id="mark">
 	        <h5>Маркетинг</h5>
 	        <span class="info">
 	            Lorem ipsum dolor sit amet placerat
@@ -87,18 +96,21 @@
                 pellentesque natoque .   
 	        </span>
 	    </div>
+	    </div>
 	</div>
 	
 	<div class="cases">
         <h3>КЕЙСЫ</h3>
+        <img src="img/underline.svg" alt="Ошибочка">
+        <br>
 	    <span class="info">
 	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.<br>
 	    </span>
-	    <img src="img/Website.png" alt="Изображение">
+	    <img src="img/Website.png" alt="Изображение" id="website">
 	    <div class="client">
 	        <span>
                 <b>CLIENT:</b><br> <small>Какая-то компания</small><br>
-                <b>WEBSITE:</b><br> <small>http://www.somedomain.com</small><br>
+                <b>WEBSITE:</b><br><small>http://www.somedomain.com</small><br>
 	        </span>
 	        <input type="submit" value="VISIT LIVE SITE">
 	    </div>
@@ -117,17 +129,17 @@
 	    <form action="#">
             <h4>ТИП САЙТА</h4>
 	        <select name="list1" id="type">
-                <option value="" selected disabled hidden>Выбеирте пункт...</option>
+                <option value="" selected disabled hidden>Выберите пункт...</option>
 	            <option value="Opt1">#</option>
 	        </select>
 	        <h4>ДИЗАЙН</h4>
 	        <select name="list2" id="dis">
-                <option value="" selected disabled hidden>Выбеирте пункт...</option>
+                <option value="" selected disabled hidden>Выберите пункт...</option>
 	            <option value="Opt1">#</option>
 	        </select>
 	        <h4>АДАПТИВНОСТЬ</h4>
 	        <select name="list3" id="adapt">
-                <option value="" selected disabled hidden>Выбеирте пункт...</option>
+                <option value="" selected disabled hidden>Выберите пункт...</option>
 	            <option value="Opt1">#</option>
 	        </select>
 	    </form>
@@ -136,36 +148,42 @@
     </div>
     
     <div class="stat">
+       <div class="stat_sq">
         <h3>НЕМНОГО СТАТИСТИКИ</h3>
-        <div class="some__stat">
+        <img src="img/underline.svg" alt="Ошибочка">
+        <br>
+        <div class="some__stat" id="happy">
             <img src="img/smile.svg" alt="Изображение">
             <p><b>120</b></p>
-            <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+            <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
         </div>
         <div class="some__stat">
             <img src="img/skob.svg" alt="Изображение">
             <p><b>4,600</b></p>
-            <p>ЧАСОВ РАБОТЫ</p>
+            <span>ЧАСОВ РАБОТЫ</span>
         </div>
         <div class="some__stat">
             <img src="img/tick.svg" alt="Изображение">
             <p><b>340</b></p>
-            <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+            <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
         </div>
-        <div class="some__stat">
+        <div class="some__stat" id="cup">
             <img src="img/cup.svg" alt="Изображение">
             <p><b>23</b></p>
-            <p>НАГРАДЫ ПОЛУЧЕНО</p>
+            <span>НАГРАДЫ ПОЛУЧЕНО</span>
+        </div>
         </div>
     </div>
     
     <div class="reviewes">
         <h3>ОТЗЫВЫ</h3>
-        <img src="img/Little_photo2.png" alt="Изображение">
+        <img src="img/underline.svg" alt="Ошибочка">
+        <br>
+        <img src="img/Little_photo2.png" alt="Изображение" id="photo">
         <span class="info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
                 facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-        
+            <br><br>
             <p><b>Михаил</b>, Ген директор ПАО “Газпром”.</p>
         </span>
         <form action="#">
