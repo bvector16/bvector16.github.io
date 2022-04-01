@@ -10,6 +10,7 @@ h3{
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 28px;
+    text-align: center;
 }
 
 nav{
@@ -78,10 +79,15 @@ nav{
 } 
 
 .about{
+    height: 720px;
+    width: 100%;
+    padding: 106px calc((100% - 720px)/2);
+    text-align: center;
+}
+
+.about__container{
     height: 520px;
     width: 720px;
-    margin: 106px auto;
-    text-align: center;
 }
 
 .about h3{
@@ -114,7 +120,7 @@ nav{
     width: auto;
     background: url(../img/Back2.png) center/ cover no-repeat;
     text-align: center;
-    padding: 106px 0px 90px 0px;
+    padding-top: 106px;
 }
 
 .what_i_can_sq{
@@ -309,10 +315,16 @@ nav{
     margin-bottom: 16px;
 }
 
-.reviewes{
+.reviews_back{
+    height: 590px;
+    width: 100%;
+    padding-top: 106px;
+    padding-left: calc((100% - 700px)/2);
+}
+
+.reviews{
     height: 400px;
     width: 700px;
-    margin: 106px auto 0px;
     text-align: center;
 }
 
@@ -320,10 +332,158 @@ nav{
     margin: 55px auto 35px;
 }
 
-.reviewes span{
+.reviews span{
     text-align: center;
     color: #243042;
 }
 
+.reviews div{
+    margin-top: 50px;
+}
+
+.reviews div input{
+    margin-left: 5px;    
+}
+
+footer{
+    height: 810px;
+    background: url(../img/Back4.png) center/ cover no-repeat;
+    padding-top: 106px;
+    padding-left: calc((100% - 740px)/2);
+}
+
+.contacts{
+    height: 638px;
+    width: 740px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.contacts h3{
+    color: #fff;
+}
+
+.contacts .info{
+    text-align: center;
+    color: #fff;
+    margin: 50px 0px 30px 0px;
+}
 
 
+.contact__containers{
+    height: 70px;
+    float: left;
+    margin-right: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#info__white1{
+    width: 130px;
+    margin-left: 60px;
+}
+
+#info__white2{
+    width: 160px;
+}
+
+#info__white3{
+    width: 115px;
+    margin-right: 75px;
+}
+
+.contact__containers img{
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.contacts form{
+    margin-top: 46px;
+    float: left;
+    width: 100%;
+}
+
+#email{
+    padding-left: 15px;
+    height: 35px;
+    width: 350px;
+    color: #d3d6dd;
+    opacity: 0.85;
+    margin-left: 36px;
+    
+}
+
+#name{
+    padding-left: 15px;
+    height: 35px;
+    width: 350px;
+    color: #d3d6dd;
+    opacity: 0.85;
+    margin-right: 0px;
+}
+
+#message{
+    padding: 8px 0px 0px 15px;
+    height: 95px;
+    width: 100%;
+    margin-top: 3%;
+    color: #d3d6dd;
+    opacity: 0.85;
+}
+
+.contacts span{
+    font-size: 25px;
+}
+
+#send{
+    height: 46px;
+    width: 125px;
+    margin-top: 28px;
+    border: 3px #fff solid;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 17px;
+    background: none;
+}
+
+.soc{
+    position: absolute;
+    bottom: 0;
+}
+
+#fb{
+    margin-left: -208px;
+}
+
+#tw{
+    margin-left: -136px;
+    margin-bottom: 3px;
+}
+
+#ball{
+    margin-left: -56px;
+}
+
+#cat{
+    margin-left: 23px;
+}
+
+#inst{
+    margin-left: 103px;
+}
+
+#in{
+    margin-left: 183px;
+}
+
+.end{
+    height: 93px;
+    background-color: #354051;
+    line-height: 93px;
+    text-align: center;
+}
+
+.end span{
+    color: #fff;
+}
