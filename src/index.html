@@ -11,21 +11,22 @@
     
     <meta property="og:title" content="Это моя первая страница">
     <title>Андрей Браун - Веб-разработчик</title>
+
 </head>
 
 <body>
-    
+   
     <header>
         <nav>
             <div class="logo">Андрей Браун</div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,12 +35,13 @@
 	<div class="main"><div class="title__container">
 	    <h1>Привет <br> Я Андрей Браун</h1>
 	    <h4>Фулл стек веб-разработчик</h4>
-	    <input type="submit" value="Обо мне">
-	    <input type="submit" value="Мои работы">
+	    <input type="button" value="Обо мне">
+	    <input type="button" value="Мои работы">
 	    </div>
 	</div>
 	
-    <div class="about"><div class="about__conteiner">
+   <main>
+    <section class="about"><div class="about__conteiner">
 	        <h3>ОБО МНЕ</h3>
 	        <img src="img/underline.svg" alt="Ошибочка">
 	        <br>
@@ -48,11 +50,11 @@
         <br><br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p></span>
-	        <input type="submit" value="Скачать резюме">
+	        <input type="button" value="Скачать резюме">
 	    </div>
-	</div>
-	
-	<div class="what_i_can">
+	</section>
+
+	<section class="what_i_can">
         <div class="what_i_can_sq">
 	    <h3>ЧТО Я УМЕЮ</h3>
 	    <img src="img/underline.svg" alt="Ошибочка">
@@ -97,9 +99,9 @@
 	        </span>
 	    </div>
 	    </div>
-	</div>
+	</section>
 	
-	<div class="cases">
+	<section class="cases">
         <h3>КЕЙСЫ</h3>
         <img src="img/underline.svg" alt="Ошибочка">
         <br>
@@ -112,7 +114,7 @@
                 <b>CLIENT:</b><br> <small>Какая-то компания</small><br>
                 <b>WEBSITE:</b><br><small>http://www.somedomain.com</small><br>
 	        </span>
-	        <input type="submit" value="VISIT LIVE SITE">
+	        <input type="button" value="VISIT LIVE SITE">
 	    </div>
 	    <div class="project__name">
             <h4>Название проекта</h4>
@@ -122,22 +124,22 @@
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 	        </span>
 	    </div>
-	</div>
+	</section>
 	
-	<div class="count">
+	<section class="count">
         <h2>Расчет стоимости</h2>
 	    <form action="#">
-            <h4>ТИП САЙТА</h4>
+            <label>ТИП САЙТА</label>
 	        <select name="list1" id="type">
                 <option value="" selected disabled hidden>Выберите пункт...</option>
 	            <option value="Opt1">#</option>
 	        </select>
-	        <h4>ДИЗАЙН</h4>
+	        <label>ДИЗАЙН</label>
 	        <select name="list2" id="dis">
                 <option value="" selected disabled hidden>Выберите пункт...</option>
 	            <option value="Opt1">#</option>
 	        </select>
-	        <h4>АДАПТИВНОСТЬ</h4>
+	        <label>АДАПТИВНОСТЬ</label>
 	        <select name="list3" id="adapt">
                 <option value="" selected disabled hidden>Выберите пункт...</option>
 	            <option value="Opt1">#</option>
@@ -145,9 +147,9 @@
 	    </form>
         <p><b>Строки</b></p>
         <p><b>Стоимость</b></p>
-    </div>
+    </section>
     
-    <div class="stat">
+    <section class="stat">
        <div class="stat_sq">
         <h3>НЕМНОГО СТАТИСТИКИ</h3>
         <img src="img/underline.svg" alt="Ошибочка">
@@ -173,9 +175,9 @@
             <span>НАГРАДЫ ПОЛУЧЕНО</span>
         </div>
         </div>
-    </div>
+    </section>
     
-    <div class="reviews_back">
+    <section class="reviews_back">
     <div class="reviews">
         <h3>ОТЗЫВЫ</h3>
         <img src="img/underline.svg" alt="Ошибочка">
@@ -195,7 +197,9 @@
         </form>
         </div>
     </div>
-    </div>
+    </section>
+    
+    </main>
     
     <footer>
         <div class="contacts">
@@ -217,13 +221,13 @@
                 <p class="contact__white">+7 999 999-99-99</p>
             </div>
             <span>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</span>
-            <form action="#">
+            <form id="form" action="#">
                 <input type="text" name="input__name" placeholder="Имя" id="name">
-                <input type="text" name="input__email" placeholder="Email" id="email">
+                <input type="email" name="input__email" placeholder="Email" id="email" autocomplete="off" required>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
             </form>
             <br>
-            <input type="submit" value="Отправить" id="send">
+            <input type="submit" value="Отправить" id="send" form="form">
             <br>
             <img src="img/fb.svg" alt="Изображение" class="soc" id="fb">
             <img src="img/tw.svg" alt="Изображение" class="soc" id="tw">
@@ -239,4 +243,5 @@
 	<div class="end"><span class="info" id="info__white2">Copyright © 2021 Андрей Браун. Design by Web</span></div>
 	
 </body>
+
 </html>

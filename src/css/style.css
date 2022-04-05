@@ -14,9 +14,11 @@ h3{
 }
 
 nav{
+    position: fixed;
     width: 100%;
     height: 60px;
     background: #344051;
+    z-index: 1;
 }
 
 .logo{
@@ -25,6 +27,17 @@ nav{
     line-height: 60px;
     padding-left: 300px; /*Изменить*/
     float: left;
+    animation: comming 2s;
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
 }
 
 .menu{
@@ -36,15 +49,48 @@ nav{
 .menu li{
     float: left;
     line-height: 60px;
-    color: #fff;
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    animation: topShift 2s forwards ease;
+    opacity: 0;
+}
+
+@keyframes topShift{
+    from{
+        margin-top: -80px;
+        opacity: 0;
+    }
+    
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
 }
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/Boy.png) 90% 100%/ auto 85% no-repeat, url(../img/Back1.png) center/ cover no-repeat;
 }
 
@@ -53,6 +99,21 @@ nav{
     margin: 200px 0px 0px 202px; /*Изменить*/
     color: #2c384a;
     text-align: center;
+    animation: title 2s forwards ease;
+    animation-delay: 1.4s;
+    opacity: 0;
+}
+
+@keyframes title{
+    from{
+        margin-left: -300px;
+        opacity: 0;
+    }
+    
+    to{
+        margin-left: 200px;
+        opacity: 1;
+    }
 }
 
 .title__container h1{
@@ -74,9 +135,44 @@ nav{
     border-radius: 5px;
     color: #6d7682;
     font-size: 13px;
+    font-weight: 550;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
+    transition: all 0.1s;
 } 
+
+.title__container input:hover{
+    background: #344051;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.title__container input:active{
+    transform: scale(0.95);
+}
+
+.menu li a{
+    color: white;
+    transition: all 0.1s;
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a:hover{
+    color: #e88604;
+}
+
+.menu li a:active{
+    transform: scale(0.95);
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
 
 .about{
     height: 720px;
@@ -113,18 +209,28 @@ nav{
     color: #6f707e;
     background: url(../img/download.svg) 7% 30% no-repeat;
     padding-left: 5%;
+    transition: 0.1s;
+}
+
+.about input:hover{
+    transform: scale(1.05);
+}
+
+.about input:active{
+    transform: scale(0.95);
 }
 
 .what_i_can{
     height: 520px;
     width: auto;
     background: url(../img/Back2.png) center/ cover no-repeat;
-    text-align: center;
     padding-top: 106px;
+    padding-left: calc((100% - 1260px)/2);
 }
 
 .what_i_can_sq{
     display: inline-block;
+    text-align: center;
     height: 350px;
     width: 1260px;
 }
@@ -138,6 +244,11 @@ nav{
     width: 230px;
     float: left;
     margin: 0px 42px;
+    transition: all 0.2s;
+}
+
+.what:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .what img{
@@ -208,6 +319,15 @@ nav{
     text-transform: uppercase;
     background-color: #63b5ae;
     margin-top: 20px;
+    transition: 0.1s;
+}
+
+.client input:hover{
+    transform: scale(1.05);
+}
+
+.client input:active{
+    transform: scale(0.95);
 }
 
 .project__name{
@@ -247,7 +367,7 @@ nav{
     border-bottom: 3px #d1d1d1 solid;
 }
 
-.count form h4{
+.count form label{
     font-size: 25px;
     text-transform: uppercase;
     text-align: left;
@@ -274,7 +394,8 @@ nav{
     height: 500px;
     margin: 154px auto 0px;
     background: url(../img/Back3.png) center/ cover no-repeat;
-    padding: 100px;
+    padding-top: 106px;
+    padding-left: calc((100% - 1329px)/2);
 }
 
 .stat_sq{
@@ -288,6 +409,11 @@ nav{
     float: left;
     margin-left: 153px;
     margin-top: 78px;
+    transition: all 0.2s;
+}
+
+.some__stat:hover{
+    transform: scale(1.1);
 }
 
 .some__stat img{
@@ -377,6 +503,11 @@ footer{
     margin-right: 100px;
     text-align: center;
     margin-bottom: 40px;
+    transition: all 0.2s;
+}
+
+.contact__containers:hover{
+    transform: scale(1.05);
 }
 
 #info__white1{
@@ -445,6 +576,17 @@ footer{
     color: #fff;
     font-size: 17px;
     background: none;
+    transition: 0.1s;
+}
+
+#send:hover{
+    border-color: #e88604;
+    color: #e88604;
+    transform: scale(1.05);
+}
+
+#send:active{
+    transform: scale(0.95);
 }
 
 .soc{
@@ -475,6 +617,18 @@ footer{
 
 #in{
     margin-left: 183px;
+}
+
+#tw, #fb, #ball, #cat, #inst, #in{
+    transition: active 0.1s;
+}
+
+#fb:hover, #tw:hover, #ball:hover, #cat:hover, #inst:hover, #in:hover{
+    transform:  scale(1.05);
+}
+
+#fb:active, #tw:active, #ball:active, #cat:active, #inst:active, #in:active{
+    transform:  scale(0.95);
 }
 
 .end{
